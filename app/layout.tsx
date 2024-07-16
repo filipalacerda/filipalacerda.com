@@ -1,13 +1,7 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Filipa Lacerda",
-  description: "Filipa Lacerda resume and blog",
-};
 
 export default function RootLayout({
   children,
@@ -20,6 +14,11 @@ export default function RootLayout({
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0"
+        ></meta>
+        <meta charset="utf-8" />
+        <meta
+          name="description"
+          content="Filipa Lacerda online CV and blog. You can find my resume, recipes, coffees, diy projects"
         ></meta>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
