@@ -1,4 +1,4 @@
-import Header from './components/header'
+import Header from "./components/header";
 
 export default function Home() {
   return (
@@ -6,7 +6,6 @@ export default function Home() {
       <Header />
 
       <section className="content"></section>
-
     </div>
   );
 }
