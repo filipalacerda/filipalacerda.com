@@ -19,21 +19,21 @@ const Sidebar = ({ isOpen, onClickIcon, items }: SidebarProps) => {
     <section
       className={`sidebar ${isOpen ? "sidebar-open" : "sidebar-closed"}`}
     >
-      <header className="header">
+      <header className="sidebar-header">
         <button onClick={() => onClickIcon()}>
           {isOpen ? (
-            <FontAwesomeIcon icon={faXmark} size="lg" />
+            <FontAwesomeIcon icon={faXmark} size="xl" />
           ) : (
-            <FontAwesomeIcon icon={faBars} size="lg" />
+            <FontAwesomeIcon icon={faBars} size="xl" />
           )}
         </button>
       </header>
 
       {isOpen && (
-        <nav>
+        <nav className="sidebar-nav">
           <ul>
             {items.map((item) => (
-              <li key={item.text}>
+              <li key={item.text} className={`roboto-medium sidebar-link`}>
                 <a href={item.link}>{item.text}</a>
               </li>
             ))}
