@@ -17,6 +17,10 @@
   padding: 20px;
 }
 
+.sidebar-icon span {
+  height: auto;
+}
+
 .sidebar-header {
   position: relative;
   display: flex;

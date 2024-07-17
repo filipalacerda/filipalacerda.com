@@ -1,7 +1,8 @@
 "use client";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import Icon from "@mui/material/Icon";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 
 import "./styles.css";
 
@@ -20,11 +21,15 @@ const Sidebar = ({ isOpen, onClickIcon, items }: SidebarProps) => {
       className={`sidebar ${isOpen ? "sidebar-open" : "sidebar-closed"}`}
     >
       <header className="sidebar-header">
-        <button onClick={() => onClickIcon()}>
+        <button className="sidebar-icon" onClick={() => onClickIcon()}>
           {isOpen ? (
-            <FontAwesomeIcon icon={faXmark} size="xl" />
+            <Icon>
+              <CloseIcon />
+            </Icon>
           ) : (
-            <FontAwesomeIcon icon={faBars} size="xl" />
+            <Icon>
+              <MenuIcon />
+            </Icon>
           )}
         </button>
       </header>
