@@ -5,6 +5,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
 
+import useScreenSize from "../../hooks/useScreenSize";
+
 import "./styles.css";
 
 type SidebarProps = {
@@ -15,7 +17,11 @@ type SidebarProps = {
 };
 
 const Sidebar = ({ items }: SidebarProps) => {
-  const [isOpen, setIsOpen] = useState<boolean>(true);
+  const { width } = useScreenSize();
+
+  const isDesktop = width >= 1240;
+
+  const [isOpen, setIsOpen] = useState<boolean>(isDesktop ? true : false);
 
   return (
     <section
