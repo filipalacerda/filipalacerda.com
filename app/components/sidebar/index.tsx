@@ -16,9 +16,14 @@ type SidebarProps = {
   }[];
 };
 
+/**
+ * Renders a collapsible sidebar component
+ * with the navigation links to the app
+ */
 const Sidebar = ({ items }: SidebarProps) => {
   const { width } = useScreenSize();
 
+  // Check if it's Desktop size. The sidebar will only be opened by default on desktop
   const isDesktop = width >= 1240;
 
   const [isOpen, setIsOpen] = useState<boolean>(isDesktop ? true : false);
@@ -30,11 +35,11 @@ const Sidebar = ({ items }: SidebarProps) => {
       <header className="sidebar-header">
         <button className="sidebar-icon" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? (
-            <Icon>
+            <Icon aria-label="Close navigational sidebar">
               <CloseIcon />
             </Icon>
           ) : (
-            <Icon>
+            <Icon aria-label="Open navigational sidebar">
               <MenuIcon />
             </Icon>
           )}
