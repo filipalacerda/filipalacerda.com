@@ -32,27 +32,29 @@ export default function RootLayout({
       </head>
 
       <body className={inter.className}>
-        <Sidebar
-          items={[
-            {
-              link: "/",
-              text: "Home",
-            },
-            {
-              link: "/resume",
-              text: "Resume",
-            },
-            {
-              link: "/talks",
-              text: "Talks",
-            },
-            {
-              link: "/blog",
-              text: "Blog",
-            },
-          ]}
-        />
-        <div className="content">{children}</div>
+        <div className="app">
+          <Sidebar
+            items={[
+              {
+                link: "/",
+                text: "Home",
+              },
+              {
+                link: "/resume",
+                text: "Resume",
+              },
+              {
+                link: "/talks",
+                text: "Talks",
+              },
+              {
+                link: "/blog",
+                text: "Blog",
+              },
+            ]}
+          />
+          <div className="content">{children}</div>
+        </div>
       </body>
     </html>
   );

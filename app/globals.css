@@ -14,6 +14,15 @@ body {
   height: 100vh;
 }
 
+.app {
+  display: flex;
+  height: 100%;
+}
+
+.content {
+  margin: 0 auto;
+}
+
 .roboto-thin {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
