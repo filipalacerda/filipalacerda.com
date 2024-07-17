@@ -16,6 +16,10 @@ type SidebarProps = {
   }[];
 };
 
+const isLinkActive = (href: string) => {
+  return window.location.pathname === href;
+};
+
 /**
  * Renders a collapsible sidebar component
  * with the navigation links to the app
@@ -50,7 +54,10 @@ const Sidebar = ({ items }: SidebarProps) => {
         <nav className="sidebar-nav">
           <ul>
             {items.map((item) => (
-              <li key={item.text} className={`roboto-medium sidebar-link`}>
+              <li
+                key={item.text}
+                className={`roboto-medium sidebar-link ${isLinkActive(item.link) && "active"}`}
+              >
                 <a href={item.link}>{item.text}</a>
               </li>
             ))}
@@ -62,3 +69,4 @@ const Sidebar = ({ items }: SidebarProps) => {
 };
 
 export default Sidebar;
+export { isLinkActive };
