@@ -1,5 +1,10 @@
+"use client";
+
 import { Inter } from "next/font/google";
+import { useState } from "react";
+
 import "./globals.css";
+import Sidebar from "./components/sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -8,6 +13,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(true);
   return (
     <html lang="en">
       <head>
@@ -15,7 +21,6 @@ export default function RootLayout({
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         ></meta>
-        <meta charset="utf-8" />
         <meta
           name="description"
           content="Filipa Lacerda online CV and blog. You can find my resume, recipes, coffees, diy projects"
@@ -28,7 +33,31 @@ export default function RootLayout({
         />
       </head>
 
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Sidebar
+          isOpen={isSidebarOpen}
+          onClickIcon={() => setIsSidebarOpen(!isSidebarOpen)}
+          items={[
+            {
+              link: "/",
+              text: "Home",
+            },
+            {
+              link: "/resume",
+              text: "Resume",
+            },
+            {
+              link: "/talks",
+              text: "Talks",
+            },
+            {
+              link: "/blog",
+              text: "Blog",
+            },
+          ]}
+        />
+        <div className="content">{children}</div>
+      </body>
     </html>
   );
 }
