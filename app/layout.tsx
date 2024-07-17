@@ -1,7 +1,6 @@
 "use client";
 
 import { Inter } from "next/font/google";
-import { useState } from "react";
 
 import "./globals.css";
 import Sidebar from "./components/sidebar";
@@ -13,7 +12,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(true);
   return (
     <html lang="en">
       <head>
@@ -35,8 +33,6 @@ export default function RootLayout({
 
       <body className={inter.className}>
         <Sidebar
-          isOpen={isSidebarOpen}
-          onClickIcon={() => setIsSidebarOpen(!isSidebarOpen)}
           items={[
             {
               link: "/",

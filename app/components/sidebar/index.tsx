@@ -3,6 +3,7 @@
 import Icon from "@mui/material/Icon";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import { useState } from "react";
 
 import "./styles.css";
 
@@ -11,17 +12,17 @@ type SidebarProps = {
     link: string;
     text: string;
   }[];
-  isOpen: boolean;
-  onClickIcon: () => void;
 };
 
-const Sidebar = ({ isOpen, onClickIcon, items }: SidebarProps) => {
+const Sidebar = ({ items }: SidebarProps) => {
+  const [isOpen, setIsOpen] = useState<boolean>(true);
+
   return (
     <section
       className={`sidebar ${isOpen ? "sidebar-open" : "sidebar-closed"}`}
     >
       <header className="sidebar-header">
-        <button className="sidebar-icon" onClick={() => onClickIcon()}>
+        <button className="sidebar-icon" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? (
             <Icon>
               <CloseIcon />
