@@ -1,4 +1,6 @@
 import Image from "next/image";
+
+import SocialIcons from "./components/socialIcons";
 import ProfilePicture from "./images/filipa.jpg";
 
 import "./styles/home.css";
@@ -15,6 +17,8 @@ export default function Home() {
             alt="Profile picture"
           />
         </div>
+
+        <SocialIcons />
       </section>
     </div>
   );
