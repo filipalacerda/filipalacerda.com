@@ -10,7 +10,7 @@ import TwitterIcon from "../../images/twitter-x.svg";
 const SocialIcons = () => {
   return (
     <div>
-      <ul className="flex justify-between mt-10">
+      <ul className="flex justify-between mt-10 m-auto w-60">
         <li>
           <a
             href="https://twitter.com/FilipaLacerda"
