@@ -4,6 +4,7 @@ import Icon from "@mui/material/Icon";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
+import Link from "next/link";
 
 import useScreenSize from "../../hooks/useScreenSize";
 
@@ -58,7 +59,7 @@ const Sidebar = ({ items }: SidebarProps) => {
                 key={item.text}
                 className={`roboto-medium sidebar-link ${isLinkActive(item.link) && "active"}`}
               >
-                <a href={item.link}>{item.text}</a>
+                <Link href={item.link}>{item.text}</Link>
               </li>
             ))}
           </ul>
