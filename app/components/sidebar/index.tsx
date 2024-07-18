@@ -39,7 +39,11 @@ const Sidebar = ({ items }: SidebarProps) => {
       <header
         className={`flex relative pt-4 justify-end ${isOpen ? "pr-4" : "pr-3.5"}`}
       >
-        <button className="sidebar-icon" onClick={() => setIsOpen(!isOpen)}>
+        <button
+          className="sidebar-icon"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle Sidebar Visibility"
+        >
           {isOpen ? (
             <Icon aria-label="Close navigational sidebar">
               <CloseIcon />

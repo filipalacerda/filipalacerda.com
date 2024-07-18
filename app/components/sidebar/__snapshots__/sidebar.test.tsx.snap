@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar when component renders should match snapshot 1`] = `
+<div>
+  <section
+    class="flex flex-col z-10 h-full sidebar w-12"
+  >
+    <header
+      class="flex relative pt-4 justify-end pr-3.5"
+    >
+      <button
+        class="sidebar-icon"
+      >
+        <span
+          aria-hidden="true"
+          aria-label="Open navigational sidebar"
+          class="material-icons notranslate MuiIcon-root MuiIcon-fontSizeMedium css-kp9ftd-MuiIcon-root"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="MenuIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"
+            />
+          </svg>
+        </span>
+      </button>
+    </header>
+  </section>
+</div>
+`;
