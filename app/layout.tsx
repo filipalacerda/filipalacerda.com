@@ -32,7 +32,7 @@ export default function RootLayout({
       </head>
 
       <body className={inter.className}>
-        <div className="app">
+        <div className="flex h-full">
           <Sidebar
             items={[
               {
@@ -53,7 +53,7 @@ export default function RootLayout({
               },
             ]}
           />
-          <div className="content">{children}</div>
+          <div className="content mx-auto">{children}</div>
         </div>
       </body>
     </html>

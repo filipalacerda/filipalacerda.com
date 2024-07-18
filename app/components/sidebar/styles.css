@@ -1,45 +1,7 @@
 .sidebar {
   box-shadow: 5px 0 5px -3px #cecece;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.sidebar-open {
-  width: 250px;
-}
-
-.sidebar-closed {
-  width: 50px;
-}
-
-.sidebar-nav {
-  padding: 20px;
 }
 
 .sidebar-icon span {
   height: auto;
-}
-
-.sidebar-header {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 15px;
-  padding-right: 15px;
-}
-
-.sidebar-link {
-  font-size: 24px;
-  text-transform: uppercase;
-  padding: 5px 0px;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.active {
-  text-decoration: underline;
-  color: #e76f51;
 }
