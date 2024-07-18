@@ -5,6 +5,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import useScreenSize from "../../hooks/useScreenSize";
 
@@ -15,10 +16,6 @@ type SidebarProps = {
     link: string;
     text: string;
   }[];
-};
-
-const isLinkActive = (href: string) => {
-  return window.location.pathname === href;
 };
 
 /**
@@ -33,11 +30,15 @@ const Sidebar = ({ items }: SidebarProps) => {
 
   const [isOpen, setIsOpen] = useState<boolean>(isDesktop ? true : false);
 
+  const currentPath = usePathname();
+
   return (
     <section
-      className={`sidebar ${isOpen ? "sidebar-open" : "sidebar-closed"}`}
+      className={`flex flex-col z-10 h-full sidebar ${isOpen ? "w-60" : "w-12"}`}
     >
-      <header className="sidebar-header">
+      <header
+        className={`flex relative pt-4 justify-end ${isOpen ? "pr-4" : "pr-3.5"}`}
+      >
         <button className="sidebar-icon" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? (
             <Icon aria-label="Close navigational sidebar">
@@ -52,16 +53,18 @@ const Sidebar = ({ items }: SidebarProps) => {
       </header>
 
       {isOpen && (
-        <nav className="sidebar-nav">
+        <nav className="px-5 py-5">
           <ul>
-            {items.map((item) => (
-              <li
-                key={item.text}
-                className={`roboto-medium sidebar-link ${isLinkActive(item.link) && "active"}`}
-              >
-                <Link href={item.link}>{item.text}</Link>
-              </li>
-            ))}
+            {items.map((item) => {
+              return (
+                <li
+                  key={item.text}
+                  className={`roboto-medium hover:underline text-2xl uppercase py-1.5 ${currentPath === item.link && "text-orangeDark underline"}`}
+                >
+                  <Link href={item.link}>{item.text}</Link>
+                </li>
+              );
+            })}
           </ul>
         </nav>
       )}
@@ -70,4 +73,3 @@ const Sidebar = ({ items }: SidebarProps) => {
 };
 
 export default Sidebar;
-export { isLinkActive };
