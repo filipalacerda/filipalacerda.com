@@ -3,12 +3,13 @@
 exports[`Sidebar when component renders should match snapshot 1`] = `
 <div>
   <section
-    class="flex flex-col z-10 h-full sidebar w-12"
+    class="absolute bg-white flex flex-col z-10 h-full sidebar w-12"
   >
     <header
       class="flex relative pt-4 justify-end pr-3.5"
     >
       <button
+        aria-label="Toggle Sidebar Visibility"
         class="sidebar-icon"
       >
         <span
