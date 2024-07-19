@@ -36,18 +36,19 @@ describe(JobCard.name, () => {
   });
 
   it("should render date", () => {
-    expect(screen.getByText(job.date.from)).toBeInTheDocument();
-    expect(screen.getByText(job.date.to)).toBeInTheDocument();
+    expect(
+      screen.getByText(`${job.date.from} - ${job.date.to}`),
+    ).toBeInTheDocument();
   });
 
   it("should render the logo", () => {
     expect(
-      screen.getAllByAltText(`${job.company.name} logo`),
+      screen.getAllByAltText(`${job.company.name} logo`)[0],
     ).toBeInTheDocument();
   });
 
   it("should not render description by default", () => {
-    expect(screen.getByText(job.description)).not.toBeInTheDocument();
+    expect(screen.queryByText(job.description)).not.toBeInTheDocument();
   });
 
   it("should render description when the user clicks read more", async () => {
