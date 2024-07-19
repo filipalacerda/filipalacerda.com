@@ -34,7 +34,7 @@ const Sidebar = ({ items }: SidebarProps) => {
 
   return (
     <section
-      className={`flex flex-col z-10 h-full sidebar ${isOpen ? "w-60" : "w-12"}`}
+      className={`absolute bg-white flex flex-col z-10 h-full sidebar ${isOpen ? "w-60" : "w-12"}`}
     >
       <header
         className={`flex relative pt-4 justify-end ${isOpen ? "pr-4" : "pr-3.5"}`}

@@ -53,7 +53,7 @@ export default function RootLayout({
               },
             ]}
           />
-          <div className="content mx-auto">{children}</div>
+          <div className="content app">{children}</div>
         </div>
       </body>
     </html>

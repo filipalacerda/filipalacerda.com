@@ -14,6 +14,18 @@ body {
   height: 100vh;
 }
 
+@media screen and (min-width: 600px) {
+  .app {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .app {
+    margin: 0 auto 0 50px;
+  }
+}
+
 .roboto-thin {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
