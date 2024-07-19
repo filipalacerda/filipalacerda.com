@@ -57,7 +57,7 @@ export default function RootLayout({
               },
             ]}
           />
-          <div className="content app">{children}</div>
+          <div className="content app overflow-auto">{children}</div>
         </div>
       </body>
     </html>
