@@ -30,19 +30,20 @@ const JobCard = ({
 }: JobCardProps) => {
   const [isCollapsed, setIsCollapsed] = useState<boolean>(true);
   return (
-    <div className="border border-darkBlue rounded flex py-2 px-2 flex flex-col">
+    <div className="border border-darkBlue rounded flex py-2 px-2 flex flex-col mt-4">
       <div className="section-top flex flex-col">
         <div className="card flex justify-between">
-          <div className="header ">
+          <div className="header">
             <h1 className="text-2xl roboto-bold underline text-green">
               <a href={company.url}>{company.name}</a>
             </h1>
             <h2 className="text-lg roboto-bold mt-2">{title}</h2>
-            <span className="roboto-light text-xs mt-2">
+            <p className="roboto-light text-xs mt-2">
               {date.from} - {date.to}
-            </span>
+            </p>
+            <span className="roboto-light text-xs mt-2">{location}</span>
           </div>
-          <div className="image">
+          <div className="mt-2.5 mr-3.5">
             <Image
               src={company.logo}
               width={100}

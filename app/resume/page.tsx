@@ -1,5 +1,5 @@
 import JobCard from "../components/job_card";
-import GitLabLogo from "../images/gitlab-logo-500.svg";
+import jobs from "./data";
 
 export default function Resume() {
   return (
@@ -8,20 +8,23 @@ export default function Resume() {
         Resume
       </h1>
       <section>
-        <JobCard
-          company={{
-            name: "GitLab",
-            url: "https://about.gitlab.com/",
-            logo: GitLabLogo,
-          }}
-          date={{
-            from: "September 2016",
-            to: "December 2019",
-          }}
-          title="Senior Frontend Engineer"
-          location="Remote"
-          description="Refactored a jQuery-based application into Vuejs, and wrote the documentation for Vue patterns, flux state management, and Internal Styleguide for Vue. Developed several CI/CD features. Worked as a Release Manager for a couple of months."
-        />
+        {jobs.map((job) => (
+          <JobCard
+            key={job.company.name}
+            company={{
+              name: job.company.name,
+              url: job.company.url,
+              logo: job.company.logo,
+            }}
+            date={{
+              from: job.date.from,
+              to: job.date.to,
+            }}
+            title={job.title}
+            location={job.location}
+            description={job.description}
+          />
+        ))}
       </section>
     </section>
   );
