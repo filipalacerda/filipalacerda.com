@@ -17,6 +17,7 @@ body {
 @media screen and (min-width: 600px) {
   .app {
     margin: 0 auto;
+    width: 630px;
   }
 }
 

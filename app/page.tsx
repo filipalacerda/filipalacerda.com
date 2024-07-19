@@ -26,20 +26,43 @@ export default function Home() {
             Welcome!
           </h1>
 
-          <section className="mt-6 text-center">
-            <p className="roboto-light text-md">
-              My name is Filipa Lacerda and I'm a Senior Frontend Engineer.
+          <section className="mt-6 text-center roboto-light text-md">
+            <p>My name is Filipa Lacerda and I'm a Senior Frontend Engineer.</p>
+            <p className="mt-4">
+              This is my personal website. Here you can find more about my work
+              and my personal life!
             </p>
-            <p className="roboto-light text-md mt-4">
-              This is my personal website, built from scratch with Next.js. Here
-              you can find more about my work and my personal life!
-            </p>
-            <p className="roboto-light text-md mt-4">
+            <p className="mt-4">
               I've been working remotely for the past 10 years and I felt in
               love with it! You can find more details about my experience{" "}
               <Link href="/resume" className="underline text-green">
                 here.
               </Link>
+            </p>
+            <p className="mt-4">
+              When I'm not working, you can find me running, doing CrossFit at{" "}
+              <a
+                href="https://www.instagram.com/mare_box/"
+                className="underline text-green"
+              >
+                @mare_box
+              </a>
+              , reading or cooking. On the{" "}
+              <Link href="/blog" className="underline text-green">
+                blog
+              </Link>{" "}
+              section you can also find about my DYI projects, recipes, travel
+              journals and more.
+            </p>
+            <p className="mt-4">
+              I'm highly addicted to good coffee. I work from a{" "}
+              <a
+                href="https://www.instagram.com/portadocafe/"
+                className="underline text-green"
+              >
+                Porta do Café
+              </a>{" "}
+              and on the blog you can find a list of my favourite coffees!
             </p>
           </section>
         </div>

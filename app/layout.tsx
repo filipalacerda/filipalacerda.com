@@ -44,6 +44,10 @@ export default function RootLayout({
                 text: "Resume",
               },
               {
+                link: "/education",
+                text: "Education",
+              },
+              {
                 link: "/talks",
                 text: "Talks",
               },
