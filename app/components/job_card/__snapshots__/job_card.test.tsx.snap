@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JobCard should match snapshot 1`] = `
+<div>
+  <div
+    class="border border-darkBlue rounded flex py-2 px-2 flex flex-col mt-4"
+  >
+    <div
+      class="section-top flex flex-col"
+    >
+      <div
+        class="card flex justify-between"
+      >
+        <div
+          class="header"
+        >
+          <h1
+            class="text-2xl roboto-bold underline text-green"
+          >
+            <a
+              href="https://livelyme.com/"
+            >
+              Lively
+            </a>
+          </h1>
+          <h2
+            class="text-lg roboto-bold mt-2"
+          >
+            Senior Frontend Engineer
+          </h2>
+          <p
+            class="roboto-light text-xs mt-2"
+          >
+            May 2024
+             - 
+            Present
+          </p>
+          <span
+            class="roboto-light text-xs mt-2"
+          >
+            Remote
+          </span>
+        </div>
+        <div
+          class="mt-2.5 mr-3.5"
+        >
+          <img
+            alt="Lively logo"
+            data-nimg="1"
+            decoding="async"
+            height="100"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=128&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+            style="color: transparent;"
+            width="100"
+          />
+        </div>
+      </div>
+      <button
+        aria-label="Read more"
+      >
+        <span
+          aria-hidden="true"
+          aria-label="Toggle description icon"
+          class="material-icons notranslate MuiIcon-root MuiIcon-fontSizeMedium css-kp9ftd-MuiIcon-root"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ExpandMoreIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
