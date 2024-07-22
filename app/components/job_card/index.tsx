@@ -34,7 +34,7 @@ const JobCard = ({
       <div className="section-top flex flex-col">
         <div className="card flex justify-between">
           <div className="header">
-            <h1 className="text-2xl roboto-bold underline text-green">
+            <h1 className="text-2xl roboto-light underline text-green">
               <a href={company.url}>{company.name}</a>
             </h1>
             <h2 className="text-lg roboto-bold mt-2">{title}</h2>

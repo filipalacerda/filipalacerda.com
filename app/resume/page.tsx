@@ -4,9 +4,6 @@ import jobs from "./data";
 export default function Resume() {
   return (
     <section className="mt-12">
-      <h1 className="text-4xl roboto-bold mb-4 m-auto flex justify-center text-darkBlue">
-        Resume
-      </h1>
       <section>
         {jobs.map((job) => (
           <JobCard
