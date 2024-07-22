@@ -1,9 +1,19 @@
 import JobCard from "../components/job_card";
-import jobs from "./data";
+import Badge from "../components/badge";
+import { jobs, skills } from "./data";
 
 export default function Resume() {
   return (
     <section className="mt-12">
+      <section className="flex flex-wrap justify-between gap-2">
+        {skills.map((skill) => (
+          <Badge
+            key={skill.name}
+            name={skill.name}
+            backgroundColor={skill.backgroundColor}
+          />
+        ))}
+      </section>
       <section>
         {jobs.map((job) => (
           <JobCard

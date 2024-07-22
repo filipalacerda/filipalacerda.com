@@ -113,4 +113,33 @@ const jobs = [
   },
 ];
 
-export default jobs;
+const skills = [
+  {
+    name: "JavaScript",
+    backgroundColor: "#F4A261",
+  },
+  { name: "HTML", backgroundColor: "#E9C46A" },
+  { name: "CSS", backgroundColor: "#2A9D8F" },
+  {
+    name: "React",
+    backgroundColor: "#264653",
+  },
+  {
+    name: "TypeScript",
+    backgroundColor: "#F4A261",
+  },
+  {
+    name: "Jest",
+    backgroundColor: "#E9C46A",
+  },
+  {
+    name: "Vuejs",
+    backgroundColor: "#E76F51",
+  },
+  { name: "Webpack", backgroundColor: "#2A9D8F" },
+  { name: "Redux", backgroundColor: "#E9C46A" },
+  { name: "Design Systems", backgroundColor: "#F4A261" },
+  { name: "Styled components", backgroundColor: "#264653" },
+];
+
+export { jobs, skills };
