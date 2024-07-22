@@ -27,20 +27,22 @@ export default function Home() {
           </h1>
 
           <section className="mt-6 text-center roboto-light text-md">
-            <p>My name is Filipa Lacerda and I'm a Senior Frontend Engineer.</p>
+            <p>
+              My name is Filipa Lacerda and I am a Senior Frontend Engineer.
+            </p>
             <p className="mt-4">
               This is my personal website. Here you can find more about my work
               and my personal life!
             </p>
             <p className="mt-4">
-              I've been working remotely for the past 10 years and I felt in
+              I havee been working remotely for the past 10 years and I felt in
               love with it! You can find more details about my experience{" "}
               <Link href="/resume" className="underline text-green">
                 here.
               </Link>
             </p>
             <p className="mt-4">
-              When I'm not working, you can find me running, doing CrossFit at{" "}
+              When I am not working, you can find me running, doing CrossFit at{" "}
               <a
                 href="https://www.instagram.com/mare_box/"
                 className="underline text-green"
@@ -55,7 +57,7 @@ export default function Home() {
               journals and more.
             </p>
             <p className="mt-4">
-              I'm highly addicted to good coffee. I work from a{" "}
+              I am highly addicted to good coffee. I work from a{" "}
               <a
                 href="https://www.instagram.com/portadocafe/"
                 className="underline text-green"
