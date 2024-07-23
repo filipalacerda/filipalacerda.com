@@ -7,7 +7,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-// import useScreenSize from "../../hooks/useScreenSize";
+import useScreenSize from "../../hooks/useScreenSize";
 
 import "./styles.css";
 
@@ -23,12 +23,12 @@ type SidebarProps = {
  * with the navigation links to the app
  */
 const Sidebar = ({ items }: SidebarProps) => {
-  //const { width } = useScreenSize();
+  const { width } = useScreenSize();
 
   // Check if it's Desktop size. The sidebar will only be opened by default on desktop
-  //const isDesktop = width >= 1240;
+  const isDesktop = width >= 1240;
 
-  const [isOpen, setIsOpen] = useState<boolean>(true);
+  const [isOpen, setIsOpen] = useState<boolean>(isDesktop ? true : false);
 
   const currentPath = usePathname();
 
