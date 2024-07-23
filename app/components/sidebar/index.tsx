@@ -32,6 +32,12 @@ const Sidebar = ({ items }: SidebarProps) => {
 
   const currentPath = usePathname();
 
+  const handleLinkClick = () => {
+    if (!isDesktop) {
+      setIsOpen(false);
+    }
+  };
+
   return (
     <section
       className={`absolute bg-white flex flex-col z-10 h-full sidebar ${isOpen ? "w-60" : "w-12"}`}
@@ -64,7 +70,9 @@ const Sidebar = ({ items }: SidebarProps) => {
                 key={item.text}
                 className={`roboto-medium hover:underline text-2xl uppercase py-1.5 ${currentPath === item.link && "text-orangeDark underline"}`}
               >
-                <Link href={item.link}>{item.text}</Link>
+                <Link href={item.link} legacyBehavior>
+                  <a onClick={() => handleLinkClick()}>{item.text}</a>
+                </Link>
               </li>
             ))}
           </ul>
