@@ -1,6 +1,6 @@
 "use client";
 import TalksCard from "../components/talks_card";
-import { talks } from "./data";
+import { talks, podcasts, blogPosts } from "./data";
 
 export default function Talks() {
   return (

@@ -47,8 +47,8 @@ export default function RootLayout({
                 text: "Education",
               },
               {
-                link: "/talks",
-                text: "Talks",
+                link: "/resources",
+                text: "Resources",
               },
               {
                 link: "/blog",

@@ -81,8 +81,40 @@ const talks = [
   },
 ];
 
-const podcasts = [];
+const podcasts = [
+  {
+    name: "Mudo Podcast",
+    href: "https://mudopodcast.pt/mp03e03-filipa-lacerda",
+  },
+  {
+    name: "Gitlab’s journey with Vue with Filipa Lacerda and Jacob Schatz",
+    href: "https://www.youtube.com/watch?v=zdMBbNOeUos&t=5s",
+  },
+  {
+    name: "Building Modal Component with Filipa Lacerda",
+    href: "https://www.youtube.com/watch?v=5b28F3IOq7s",
+  },
+];
 
-const blogPosts = [];
+const blogPosts = [
+  {
+    title: "Building a Modal Component with Vue.js",
+    href: "https://www.digitalocean.com/community/tutorials/vuejs-vue-modal-component",
+  },
+  {
+    title:
+      "https://www.digitalocean.com/community/tutorials/vuejs-vue-autocomplete-component",
+    href: "https://www.digitalocean.com/community/tutorials/vuejs-vue-autocomplete-component",
+  },
+  {
+    title:
+      "https://www.digitalocean.com/community/tutorials/vuejs-vue-a11y-autocomplete",
+    href: "https://www.digitalocean.com/community/tutorials/vuejs-vue-a11y-autocomplete",
+  },
+  {
+    title: "How To Build a Reusable Pagination Component with Vue.js",
+    href: "https://www.digitalocean.com/community/tutorials/vuejs-vue-pagination-component",
+  },
+];
 
 export { talks, podcasts, blogPosts };
