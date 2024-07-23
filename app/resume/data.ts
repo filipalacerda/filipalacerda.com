@@ -140,6 +140,11 @@ const skills = [
   { name: "Redux", backgroundColor: "#E9C46A" },
   { name: "Design Systems", backgroundColor: "#F4A261" },
   { name: "Styled components", backgroundColor: "#264653" },
+  { name: "Git", backgroundColor: "#F4A261" },
+  { name: "CI/CD", backgroundColor: "#264653" },
+  { name: "Tailwind", backgroundColor: "#E9C46A" },
+  { name: "Next.js", backgroundColor: "#2A9D8F" },
+  { name: "Emotion CSS", backgroundColor: "#264653" },
 ];
 
 export { jobs, skills };
