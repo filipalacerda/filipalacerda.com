@@ -68,7 +68,7 @@ const Sidebar = ({ items }: SidebarProps) => {
             {items.map((item) => (
               <li
                 key={item.text}
-                className={`roboto-medium hover:underline text-2xl uppercase py-1.5 ${currentPath === item.link && "text-orangeDark underline"}`}
+                className={`font-semibold hover:underline text-2xl uppercase py-1.5 ${currentPath === item.link && "text-orangeDark underline"}`}
               >
                 <Link href={item.link} legacyBehavior>
                   <a onClick={() => handleLinkClick()}>{item.text}</a>

@@ -4,7 +4,7 @@ import userEvent from "@testing-library/user-event";
 import "@testing-library/jest-dom";
 
 import JobCard from "./index";
-import jobs from "../../resume/data";
+import { jobs } from "../../resume/data";
 
 describe(JobCard.name, () => {
   let container: HTMLElement;
