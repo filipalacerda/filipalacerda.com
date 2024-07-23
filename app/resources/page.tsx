@@ -1,5 +1,6 @@
 "use client";
 import TalksCard from "../components/talks_card";
+import GeneralCard from "../components/general_card";
 import { talks, podcasts, blogPosts } from "./data";
 
 export default function Talks() {
@@ -15,6 +16,26 @@ export default function Talks() {
           youtube={talk.youtube}
         />
       ))}
+
+      <section>
+        {podcasts.map((podcast) => (
+          <GeneralCard
+            key={podcast.name}
+            title={podcast.name}
+            href={podcast.href}
+          />
+        ))}
+      </section>
+
+      <section>
+        {blogPosts.map((blogPost) => (
+          <GeneralCard
+            key={blogPost.title}
+            title={blogPost.title}
+            href={blogPost.href}
+          />
+        ))}
+      </section>
     </section>
   );
 }

@@ -102,13 +102,11 @@ const blogPosts = [
     href: "https://www.digitalocean.com/community/tutorials/vuejs-vue-modal-component",
   },
   {
-    title:
-      "https://www.digitalocean.com/community/tutorials/vuejs-vue-autocomplete-component",
+    title: "How To Build an Autocomplete Component with Vue.js",
     href: "https://www.digitalocean.com/community/tutorials/vuejs-vue-autocomplete-component",
   },
   {
-    title:
-      "https://www.digitalocean.com/community/tutorials/vuejs-vue-a11y-autocomplete",
+    title: "How to Create an Accessible Autocomplete Component with Vue.js",
     href: "https://www.digitalocean.com/community/tutorials/vuejs-vue-a11y-autocomplete",
   },
   {
