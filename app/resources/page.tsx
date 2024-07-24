@@ -1,7 +1,11 @@
 "use client";
+import dynamic from "next/dynamic";
 import TalksCard from "../components/talks_card";
 import GeneralCard from "../components/general_card";
-import Tabs from "../components/tabs";
+
+const Tabs = dynamic(() => import("../components/tabs"), {
+  ssr: false,
+});
 
 import { talks, podcasts, blogPosts } from "./data";
 
