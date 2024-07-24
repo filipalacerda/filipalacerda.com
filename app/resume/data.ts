@@ -145,6 +145,8 @@ const skills = [
   { name: "Tailwind", backgroundColor: "#E9C46A" },
   { name: "Next.js", backgroundColor: "#2A9D8F" },
   { name: "Emotion CSS", backgroundColor: "#264653" },
+  { name: "Playwright", backgroundColor: "#E9C46A" },
+  { name: "Accessibility", backgroundColor: "#2A9D8F" },
 ];
 
 export { jobs, skills };
