@@ -36,24 +36,30 @@ const Tabs = ({ tabs }: TabsProps) => {
 
   return (
     <section>
-      <ul className="flex mb-4">
-        {tabs.map((tab) => (
-          <li
-            className={`mr-4 font-semibold ${activeTab.id === tab.id && "text-orangeDark border-b"}`}
-            key={tab.title}
-          >
-            {tab.anchor ? (
-              <a href={`#${tab.anchor}`} onClick={() => handleOnClick(tab.id)}>
-                {tab.title}
-              </a>
-            ) : (
-              <button onClick={() => handleOnClick(tab.id)}>{tab.title}</button>
-            )}
-          </li>
-        ))}
-      </ul>
-
-      <section>{activeTab.content}</section>
+      <nav className="fixed pt-1 w-full tabs top-0 z-10">
+        <ul className="flex mb-4 pt-2.5">
+          {tabs.map((tab) => (
+            <li
+              className={`mr-4 font-semibold ${activeTab.id === tab.id && "text-orangeDark border-b"}`}
+              key={tab.title}
+            >
+              {tab.anchor ? (
+                <a
+                  href={`#${tab.anchor}`}
+                  onClick={() => handleOnClick(tab.id)}
+                >
+                  {tab.title}
+                </a>
+              ) : (
+                <button onClick={() => handleOnClick(tab.id)}>
+                  {tab.title}
+                </button>
+              )}
+            </li>
+          ))}
+        </ul>
+      </nav>
+      <section className="pt-5">{activeTab.content}</section>
     </section>
   );
 };
