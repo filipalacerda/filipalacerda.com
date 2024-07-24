@@ -26,3 +26,7 @@ body {
     margin: 0 auto 0 50px;
   }
 }
+
+.tabs {
+  background-color: white;
+}
