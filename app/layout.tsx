@@ -20,10 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <title>Filipa Lacerda</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         ></meta>
+        <meta name="author" content="Filipa Lacerda" />
+        <meta name="keywords" content="Frontend Engineer" />
         <meta
           name="description"
           content="Filipa Lacerda online CV and blog. You can find my resume, recipes, coffees, diy projects"
