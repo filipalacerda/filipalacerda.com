@@ -18,7 +18,17 @@ const Tabs = ({ tabs }: TabsProps) => {
     })[0];
   };
 
-  const [activeTab, setActiveTab] = useState<Tab>(tabs[0]);
+  const activeTabFromURL = () => {
+    const hashname = window.location.hash.substring(1);
+
+    return tabs.filter((tab) => {
+      return tab.anchor === hashname;
+    })[0];
+  };
+
+  const [activeTab, setActiveTab] = useState<Tab>(
+    activeTabFromURL() || tabs[0],
+  );
 
   const handleOnClick = (id: string) => {
     setActiveTab(getActiveTab(id));
