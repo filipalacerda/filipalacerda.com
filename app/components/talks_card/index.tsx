@@ -26,7 +26,7 @@ const TalksCard = ({
       {slidesURL && (
         <p className="text-sm font-light mb-4">
           Slides can be found{" "}
-          <a href={slidesURL} className="text-green underline">
+          <a href={slidesURL} className="text-green underline" target="_blank">
             here.
           </a>
         </p>

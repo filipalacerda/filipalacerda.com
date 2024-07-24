@@ -19,13 +19,13 @@ const EducationCard = ({
       <h1>
         <a
           href={externalUrl}
-          className="text-green underline roboto-bold text-md"
+          className="text-green underline font-semibold text-md"
         >
           {title}
         </a>
       </h1>
-      <p className="roboto-regular text-md">{school}</p>
-      <p className="roboto-thin text-xs">
+      <p className="font-normal text-md">{school}</p>
+      <p className="font-extralight text-xs">
         {date.from} - {date.to}
       </p>
     </div>

@@ -22,11 +22,11 @@ export default function Home() {
         <SocialIcons />
 
         <div className="m-auto mt-10">
-          <h1 className="roboto-bold text-2xl flex justify-center text-darkBlue">
+          <h1 className="font-bold text-2xl flex justify-center text-darkBlue">
             Welcome!
           </h1>
 
-          <section className="mt-6 text-center roboto-light text-md">
+          <section className="mt-6 text-center font-light text-md">
             <p>
               My name is Filipa Lacerda and I am a Senior Frontend Engineer.
             </p>

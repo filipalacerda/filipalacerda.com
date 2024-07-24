@@ -34,14 +34,14 @@ const JobCard = ({
       <div className="section-top flex flex-col">
         <div className="card flex justify-between">
           <div className="header">
-            <h1 className="text-2xl roboto-light underline text-green">
+            <h1 className="text-2xl font-light underline text-green">
               <a href={company.url}>{company.name}</a>
             </h1>
-            <h2 className="text-lg roboto-bold mt-2">{title}</h2>
-            <p className="roboto-light text-xs mt-2">
+            <h2 className="text-lg font-bold mt-2">{title}</h2>
+            <p className="font-light text-xs mt-2">
               {date.from} - {date.to}
             </p>
-            <span className="roboto-light text-xs mt-2">{location}</span>
+            <span className="font-light text-xs mt-2">{location}</span>
           </div>
           <div className="mt-2.5 mr-3.5">
             <Image
@@ -63,7 +63,7 @@ const JobCard = ({
         </button>
       </div>
 
-      {!isCollapsed && <div className="roboto-light mt-4">{description}</div>}
+      {!isCollapsed && <div className="font-light mt-4">{description}</div>}
     </div>
   );
 };

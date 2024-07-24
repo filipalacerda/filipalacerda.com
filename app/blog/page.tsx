@@ -1,3 +1,3 @@
 export default function Blog() {
-  return <p>Blog goes here</p>;
+  return <p className="mt-4">Under construction</p>;
 }
