@@ -1,5 +1,4 @@
 import GitLabLogo from "../images/gitlab-logo-500.svg";
-import LivelyLogo from "../images/logo-lively.svg";
 import ZapierLogo from "../images/zapier-logo_black.png";
 import TheNewDigitalSchoolLogo from "../images/the_new_digital_school.jpeg";
 import FeedzaiLogo from "../images/feedzai_logo.svg";
@@ -7,21 +6,6 @@ import MaisisLogo from "../images/maisis_logo.jpeg";
 import iUZlogo from "../images/iuz_logo.jpeg";
 
 const jobs = [
-  {
-    company: {
-      name: "Lively",
-      url: "https://livelyme.com/",
-      logo: LivelyLogo,
-    },
-    date: {
-      from: "May 2024",
-      to: "Present",
-    },
-    title: "Senior Frontend Engineer",
-    location: "Remote",
-    description:
-      "Worked on fixing technical debt, from creating semantic tokens for the design system reusable components to adding more than 600 unit tests to components that didn't have any. Worked on fixing acessibility errors by implementing acessibility unit tests and enable Storybook acessibility checks.",
-  },
   {
     company: {
       name: "Zapier",
