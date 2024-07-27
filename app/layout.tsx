@@ -53,10 +53,10 @@ export default function RootLayout({
                 link: "/resources",
                 text: "Resources",
               },
-              {
-                link: "/blog",
-                text: "Blog",
-              },
+              // {
+              //   link: "/blog",
+              //   text: "Blog",
+              // },
             ]}
           />
           <div className="content app overflow-auto">{children}</div>

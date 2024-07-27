@@ -27,6 +27,10 @@ body {
   }
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .tabs {
   background-color: white;
 }
