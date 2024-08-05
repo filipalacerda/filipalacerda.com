@@ -7,7 +7,7 @@ const Tabs = dynamic(() => import("../components/tabs"), {
   ssr: false,
 });
 
-import { talks, podcasts, blogPosts } from "./data";
+import { talks, podcasts, blogPosts, code } from "./data";
 
 export default function Talks() {
   return (
@@ -51,6 +51,17 @@ export default function Talks() {
                 title={blogPost.title}
                 href={blogPost.href}
               />
+            )),
+          },
+          {
+            title: "Code",
+            anchor: "code",
+            id: "code",
+            content: code.map((object) => (
+              <div key={object.name} className="mt-10">
+                <h3>{object.name}</h3>
+                <iframe src={object.src} width="100%" height="800"></iframe>
+              </div>
             )),
           },
         ]}

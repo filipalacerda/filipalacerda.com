@@ -115,4 +115,15 @@ const blogPosts = [
   },
 ];
 
-export { talks, podcasts, blogPosts };
+const code = [
+  {
+    name: "AI Tic Tac Toe",
+    src: "//jsfiddle.net/filipalacerda/u5640jh8/4/embedded/result/",
+  },
+  {
+    name: "Two Player Tic Tac Toe",
+    src: "//jsfiddle.net/filipalacerda/k3xLj6ta/2/embedded/result/",
+  },
+];
+
+export { talks, podcasts, blogPosts, code };
