@@ -36,7 +36,7 @@ const Tabs = ({ tabs }: TabsProps) => {
 
   return (
     <section>
-      <nav className="fixed pt-1 w-full tabs top-0 z-10">
+      <nav className="sticky pt-1 w-full tabs top-0 bg-white">
         <ul className="flex mb-4 pt-2.5">
           {tabs.map((tab) => (
             <li

@@ -20,6 +20,7 @@ const config: Config = {
       yellow: "#E9C46A",
       orangeLight: "#F4A261",
       orangeDark: "#E76F51",
+      white: "#ffffff",
     },
   },
   plugins: [],
