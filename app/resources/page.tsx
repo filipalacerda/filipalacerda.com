@@ -2,6 +2,7 @@
 import dynamic from "next/dynamic";
 import TalksCard from "../components/talks_card";
 import GeneralCard from "../components/general_card";
+import CodeBlock from "../components/code_block";
 
 const Tabs = dynamic(() => import("../components/tabs"), {
   ssr: false,
@@ -58,10 +59,12 @@ export default function Talks() {
             anchor: "code",
             id: "code",
             content: code.map((object) => (
-              <div key={object.name} className="mt-10">
-                <h3 className="text-2xl font-bold">{object.name}</h3>
-                <iframe src={object.src} width="100%" height="600"></iframe>
-              </div>
+              <CodeBlock
+                key={object.name}
+                name={object.name}
+                github={object.github}
+                src={object.src}
+              />
             )),
           },
         ]}
