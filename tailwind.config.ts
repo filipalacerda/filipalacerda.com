@@ -21,6 +21,8 @@ const config: Config = {
       orangeLight: "#F4A261",
       orangeDark: "#E76F51",
       white: "#ffffff",
+      border: "#fdfdfd",
+      black: "#000000",
     },
   },
   plugins: [],

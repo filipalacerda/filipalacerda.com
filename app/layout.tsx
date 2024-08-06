@@ -6,6 +6,8 @@ import "./globals.css";
 
 import dynamic from "next/dynamic";
 
+import Header from "./components/header";
+
 const Sidebar = dynamic(() => import("./components/sidebar"), {
   ssr: false,
 });
@@ -34,32 +36,34 @@ export default function RootLayout({
       </head>
 
       <body className={inter.className}>
+        <Header
+          navItems={[
+            {
+              href: "/",
+              text: "Home",
+            },
+            {
+              href: "/resume",
+              text: "Resume",
+            },
+            {
+              href: "/education",
+              text: "Education",
+            },
+            {
+              href: "/resources",
+              text: "Resources",
+            },
+            // {
+            //   link: "/blog",
+            //   text: "Blog",
+            // },
+          ]}
+        />
         <div className="flex h-full">
-          <Sidebar
-            items={[
-              {
-                link: "/",
-                text: "Home",
-              },
-              {
-                link: "/resume",
-                text: "Resume",
-              },
-              {
-                link: "/education",
-                text: "Education",
-              },
-              {
-                link: "/resources",
-                text: "Resources",
-              },
-              // {
-              //   link: "/blog",
-              //   text: "Blog",
-              // },
-            ]}
-          />
-          <div className="content app overflow-auto">{children}</div>
+          <div className="content p-10 mt-10 overflow-auto w-full">
+            {children}
+          </div>
         </div>
       </body>
     </html>
