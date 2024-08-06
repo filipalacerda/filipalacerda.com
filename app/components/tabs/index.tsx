@@ -36,8 +36,8 @@ const Tabs = ({ tabs }: TabsProps) => {
 
   return (
     <section>
-      <nav className="pt-1 w-full tabs top-24 bg-white border-b-black border-b">
-        <ul className="flex mb-4 pt-2.5">
+      <nav className="pt-1 w-full tabs top-24 bg-white border-b-darkBlue border-b">
+        <ul className="flex mb-4 pt-2.5 text-darkBlue">
           {tabs.map((tab) => (
             <li
               className={`mr-4 font-semibold ${activeTab.id === tab.id && "text-orangeDark border-b"}`}
