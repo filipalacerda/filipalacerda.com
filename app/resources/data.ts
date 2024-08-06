@@ -119,10 +119,38 @@ const code = [
   {
     name: "AI Tic Tac Toe",
     src: "//jsfiddle.net/filipalacerda/u5640jh8/4/embedded/result/",
+    github:
+      "https://github.com/filipalacerda/frontend-exercises/tree/main/examples/programs/tic-tac-toe-vs-computer",
   },
   {
     name: "Two Player Tic Tac Toe",
     src: "//jsfiddle.net/filipalacerda/k3xLj6ta/2/embedded/result/",
+    github:
+      "https://github.com/filipalacerda/frontend-exercises/tree/main/examples/programs/tic-tac-toe",
+  },
+  {
+    name: "Tables Interactions",
+    src: "//jsfiddle.net/filipalacerda/hydq581s/3/embedded/result/",
+    github:
+      "https://github.com/filipalacerda/frontend-exercises/tree/main/examples/dom-apis/tables",
+  },
+  {
+    name: "Form Validations",
+    src: "//jsfiddle.net/filipalacerda/tvwfre8n/4/embedded/result/",
+    github:
+      "https://github.com/filipalacerda/frontend-exercises/tree/main/examples/dom-apis/formValidation",
+  },
+  {
+    name: "Drag and Drop",
+    src: "//jsfiddle.net/filipalacerda/vubzg9nm/2/embedded/result/",
+    github:
+      "https://github.com/filipalacerda/frontend-exercises/tree/main/examples/dom-apis/draggable",
+  },
+  {
+    name: "FormDataEvent",
+    src: "//jsfiddle.net/filipalacerda/71wonay3/1/embedded/result/",
+    github:
+      "https://github.com/filipalacerda/frontend-exercises/tree/main/examples/dom-apis/FormDataEvent",
   },
 ];
 
