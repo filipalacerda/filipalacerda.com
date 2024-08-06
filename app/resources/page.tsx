@@ -11,7 +11,7 @@ import { talks, podcasts, blogPosts, code } from "./data";
 
 export default function Talks() {
   return (
-    <section className="mt-12">
+    <section className="mt-12  md:w-5/12 md:mx-auto">
       <Tabs
         tabs={[
           {
