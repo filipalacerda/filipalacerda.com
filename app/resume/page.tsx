@@ -4,7 +4,7 @@ import { jobs, skills } from "./data";
 
 export default function Resume() {
   return (
-    <section className="mt-12">
+    <section className="mt-12 md:w-5/12 md:mx-auto">
       <section className="flex flex-wrap justify-between gap-2">
         {skills.map((skill) => (
           <Badge

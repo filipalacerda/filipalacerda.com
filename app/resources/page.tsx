@@ -11,7 +11,7 @@ import { talks, podcasts, blogPosts, code } from "./data";
 
 export default function Talks() {
   return (
-    <section className="mt-12">
+    <section className="mt-12  md:w-5/12 md:mx-auto">
       <Tabs
         tabs={[
           {
@@ -59,8 +59,8 @@ export default function Talks() {
             id: "code",
             content: code.map((object) => (
               <div key={object.name} className="mt-10">
-                <h3>{object.name}</h3>
-                <iframe src={object.src} width="100%" height="800"></iframe>
+                <h3 className="text-2xl font-bold">{object.name}</h3>
+                <iframe src={object.src} width="100%" height="600"></iframe>
               </div>
             )),
           },

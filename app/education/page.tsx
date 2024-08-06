@@ -2,7 +2,7 @@ import EducationCard from "../components/education_card";
 
 export default function Education() {
   return (
-    <section className="mt-12">
+    <section className="mt-12 md:w-5/12 md:mx-auto">
       <EducationCard
         title="Spanish Level B1.1"
         externalUrl="https://www.ua.pt/pt/dlc/cursos-livres-e-ple"
