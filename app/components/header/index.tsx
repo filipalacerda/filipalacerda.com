@@ -76,7 +76,7 @@ const Header = ({ navItems }: HeaderProps) => {
           {navItems.map((item) => (
             <li
               key={item.text}
-              className={`p-4 duration-300 hover:text-black cursor-pointer text-[#151817] font-light hover:text-red ${
+              className={`p-4 duration-300 hover:text-black cursor-pointer text-[#151817] text-lg font-bold uppercase ${
                 currentPath === item.href &&
                 "underline text-orangeDark font-semibold"
               }`}
